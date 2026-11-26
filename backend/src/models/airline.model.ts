@@ -52,6 +52,10 @@ const airlineSchema = new Schema<IAirline>(
 );
 
 // 3. Tạo Model
-const Airline = mongoose.model<IAirline>("Airline", airlineSchema);
+const Airline = mongoose.model<IAirline>(
+  "Airline",
+   airlineSchema,
+   "Airlines"
+  );
 
 export default Airline;

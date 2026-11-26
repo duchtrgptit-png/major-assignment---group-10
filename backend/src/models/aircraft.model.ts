@@ -91,7 +91,8 @@ aircraftSchema.pre("validate", function () {
 
 const Aircraft = mongoose.model<IAircraft>(
   "Aircraft",
-  aircraftSchema
+  aircraftSchema,
+  "Aircrafts"
 );
 
 export default Aircraft;

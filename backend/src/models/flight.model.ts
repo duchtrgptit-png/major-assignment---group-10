@@ -107,6 +107,10 @@ flightSchema.pre("validate", function () {
   }
 });
 
-const Flight = mongoose.model<IFlight>("Flight", flightSchema);
+const Flight = mongoose.model<IFlight>(
+  "Flight",
+  flightSchema,
+  "Flights"
+  );
 
 export default Flight;
