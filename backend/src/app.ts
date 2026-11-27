@@ -6,7 +6,7 @@ import airlineRoutes from "./routes/airline.routes.js";
 import airportRoutes from "./routes/airport.routes.js";
 import aircraftRoutes from "./routes/aircraft.routes.js";
 import flightRoutes from "./routes/flight.routes.js";
-
+import authRoutes from "./routes/auth.routes.js";
 import notFound from "./middlewares/notFound.middleware.js";
 import errorHandler from "./middlewares/error.middleware.js";
 
@@ -22,6 +22,7 @@ app.use("/api/airlines", airlineRoutes);
 app.use("/api/airports", airportRoutes);
 app.use("/api/aircrafts", aircraftRoutes);
 app.use("/api/flights", flightRoutes);
+app.use("/api/auth", authRoutes);
 
 // Server status
 app.get("/", (req, res) => {
